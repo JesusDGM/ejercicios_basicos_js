@@ -1,21 +1,14 @@
-const words = [
-  'code',
-  'repeat',
-  'eat',
-  'sleep',
-  'code',
-  'enjoy',
-  'sleep',
-  'code',
-  'enjoy',
-  'sleep',
-  'code'
+const products = [
+  'Camiseta de Metallica',
+  'Pantalón vaquero',
+  'Gorra de beisbol',
+  'Camiseta de Basket',
+  'Cinturón de Orión',
+  'AC/DC Camiseta'
 ];
 
-function repeatCounter(list) {
-  const counts = {};
-  for (const word of list) {
-    counts[word] = (counts[word] || 0) + 1;
+for (let i = 0; i < products.length; i++) {
+  if (products[i].includes("Camiseta")) {
+    console.log(products[i]);
   }
-  return counts;
 }
